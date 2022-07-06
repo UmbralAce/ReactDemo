@@ -1,0 +1,138 @@
+.react_feature-contentbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 2rem;
+
+
+}
+
+.react_feature-contentbox-main{
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.react_feature-contentbox-main h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+
+    margin-right: 3rem;
+}
+
+.react_feature-contentbox-main p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: #ff8a71;
+    margin-top: 1.5rem;
+}
+
+.react_feature-contentbox-side{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.line{
+    width: 38px;
+    height: 3px;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-bar);
+}
+
+.react_feature-contentbox-side-feature{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.react_feature-contentbox-side-feature h4{
+    flex: 1;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+}
+
+.react_feature-contentbox-side-feature p{
+    flex: 2;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+
+    margin-left: 5rem;
+}
+
+@media screen and (max-width:950px) {
+    .react_feature-contentbox-main h1{
+        font-family: var(--font-family);
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 35px;
+    
+        margin-right: 3rem;
+    }
+
+    .react_feature-contentbox-main p{
+        font-size: 12px;
+    }
+
+    .react_feature-contentbox-side-feature h4{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .react_feature-contentbox-side-feature p{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .react_feature-contentbox-main h1{
+        font-size: 28px;
+        line-height: 35px;
+    
+        margin-right: 1rem;
+    }
+
+    .react_feature-contentbox-main p{
+        font-size: 12px;
+    }
+
+    .react_feature-contentbox-side-feature{
+        margin: 1rem;
+    }
+
+    .react_feature-contentbox-side-feature h4{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .react_feature-contentbox-side-feature p{
+        font-size: 12px;
+        line-height: 16px;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .react_feature-contentbox{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .react_feature-contentbox-main{
+        margin-bottom: 1rem;
+    }
+}

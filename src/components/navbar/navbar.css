@@ -1,0 +1,146 @@
+.react_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+
+.react_navbar-menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.react_navbar-menu_logo{
+    margin-right: 2rem;
+}
+
+.react_navbar-menu_logo img{
+    width: 62.56px;
+    height: 16.02px;
+}
+
+.react_navbar-menu_container{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.react_navbar-menu p, .react_navbar-sign p, .react_navbar-mobile_nav-sign p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+
+    padding: 0.5rem 1rem;
+}
+
+.react_navbar-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.react_navbar-sign button{
+    background-color: #FF4820;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    
+    border-radius: 10px;
+    border: 1px Solid white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.react_navbar-mobile{
+    display: none;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.react_navbar-mobile svg{
+    cursor: pointer;
+}
+
+.react_navbar-mobile_nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background-color: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    min-width: 180px;
+    margin-top: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 5 rgba(6, 219, 59, 0.2);
+}
+
+.react_navbar-mobile_nav-links p{
+    color: white;
+    font-family: var(--font-family);
+    margin: 0.5rem 0;
+}
+
+.react_navbar-mobile_nav-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .react_navbar-menu_container{
+        display: none;
+    }
+
+    .react_navbar-mobile{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .react_navbar{
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .react_navbar{
+        padding: 2rem;
+    }
+
+   .react_navbar-sign {
+        display: none;
+    }
+
+    .react_navbar-mobile_nav{
+        top: 20px;
+    }
+
+    .react_navbar-mobile_nav-sign{
+            display: block;
+            text-align: end;
+    }
+
+    .react_navbar-mobile_nav-sign button{
+        padding: 3px 10px;
+        background: #FF4820;
+        color: #ffffff;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25px;
+        border: 1px solid white;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+    }
+}

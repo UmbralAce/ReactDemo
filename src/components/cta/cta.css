@@ -1,0 +1,94 @@
+.react_cta{
+    margin: 1rem;
+}
+
+.react_cta-gradient{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(156, 39, 176, 1) 0%, rgba(255, 235, 59, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(156, 39, 176, 1) 0%, rgba(255, 235, 59, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(156, 39, 176, 1) 0%, rgba(255, 235, 59, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFEB3B', endColorstr='#9C27B0', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(156, 39, 176, 1) 0%, rgba(255, 235, 59, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(156, 39, 176, 1) 0%, rgba(255, 235, 59, 1) 100%);
+}
+
+.react_cta-info{
+    margin: 3rem 1rem;
+}
+
+.react_cta-info h6{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+
+    color: #0E0E0E;
+}
+
+.react_cta-info h3{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+.react_cta-button{
+    display: flex;
+}
+
+.react_cta-button button{
+    width: 189.14px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 2rem;
+    margin-left: 8rem;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+    .react_cta-button{
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .react_cta-info h6{
+        font-size: 10px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .react_cta-gradient{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .react_cta-button button{
+        margin: 0 0 2rem 0;
+    }
+}

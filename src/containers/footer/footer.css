@@ -1,0 +1,131 @@
+.react_footer-cta-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 8rem;
+}
+
+.react_footer-cta-container h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    margin: 1rem;
+}
+
+.react_footer-cta-container p{
+    border: 1px solid white;
+    padding: 1rem;
+
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}
+
+.react_footer-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.react_footer-menu-company{
+    display: flex;
+    flex-direction: column;
+}
+
+.react_footer-menu-company img{
+    width: 62.56px;
+    height: 16.02px;
+
+    margin-bottom: 2rem;
+}
+
+.react_footer-menu-company p{
+    font-family: 'Gilroy-Medium';
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+}
+
+.react_footer-menu-links h4{
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+
+    margin-bottom: 2rem;
+}
+
+.react_footer-menu-links p{
+    font-family: 'Gilroy-Medium';
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+    margin: 1rem 0;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Gilroy-Medium';
+    font-size: 12px;
+    line-height: 14px;
+    font-feature-settings: 'liga' off;
+
+    color: #FFFFFF;
+
+    margin: 2rem 0 0;
+}
+
+@media screen and (max-width: 650px) {
+    .react_footer-cta-container h1{
+        font-size: 32px;
+        line-height: 45px;
+    }
+   
+    .react_footer-menu{
+        flex: 1;
+        justify-items: center;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .react_footer-cta-container{
+        margin-bottom: 5rem;
+        align-items: center;
+    }
+    
+    .react_footer-cta-container h1{
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    .react_footer-menu{
+        flex: 1;
+        justify-items: center;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .react_footer-menu-company{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .react_footer-menu-links h4{
+        align-items: center;
+        justify-content: center;
+    }
+}
